@@ -9,3 +9,17 @@
 3. Optim déplacement
     - interpolation bi cubique
     - ne pas réinventer la roue
+
+### TP du 17/11 :
+
+1. JPEG :
+La plupart des étapes de la compression ont été finies.
+To do list :
+- échantillonnage des couleurs
+- Codage Huffman et RLE
+- Fonction from image to jpeg (qui fait la compression entière)
+- Fonction PSNR image et image compressée
+Proposition : essayer de choisir le facteur de qualité de la quantification (on peut voir ça en mode exploration. cf cours de signal de l'an dernier)
+
+2. Optim déplacement :
+- remplissez votre vie 
