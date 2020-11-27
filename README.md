@@ -23,3 +23,11 @@ Proposition : essayer de choisir le facteur de qualité de la quantification (on
 
 2. Optim déplacement :
 - remplissez votre vie 
+
+### TP du 27/11 : 
+1. JPEG : 
+- Codage subsampling validé par PJ 
+- Codes refaits par PJ pour aller plus vite
+- Codage RLE des blocks
+- Codage de l'alphabet (Huffman)
+- Codage de la fonction calcul de l'entropie 
