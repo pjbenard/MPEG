@@ -31,3 +31,4 @@ Proposition : essayer de choisir le facteur de qualité de la quantification (on
 - Codage RLE des blocks
 - Codage de l'alphabet (Huffman)
 - Codage de la fonction calcul de l'entropie 
+To do : coder la fonction entropy_dct qui calcule l'entropie de la dct de touuus les blocks de l'image 
