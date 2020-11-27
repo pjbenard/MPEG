@@ -31,4 +31,13 @@ Proposition : essayer de choisir le facteur de qualité de la quantification (on
 - Codage RLE des blocks
 - Codage de l'alphabet (Huffman)
 - Codage de la fonction calcul de l'entropie 
-To do : coder la fonction entropy_dct qui calcule l'entropie de la dct de touuus les blocks de l'image 
+To do : coder la fonction entropy_dct qui calcule l'entropie de la dct de touuus les blocks de l'image
+
+2. Déplacement
+- Calcul du déplacement pour un bloc par recherche exhaustive : ok
+- Test du calcul du déplacement par Three Steps Search : fiasco
+- Ajout du padding sur l'image de référence
+- TODO
+	- Généraliser le calcul à tous les blocs de l'image complète
+	- Attention aux bords
+ 
