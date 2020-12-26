@@ -11,7 +11,6 @@ import copy
 import warnings
 import scipy.signal as scs
 warnings.filterwarnings('ignore')
-import cv2
 import datetime as d
 
 
