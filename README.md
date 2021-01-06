@@ -41,3 +41,10 @@ To do : coder la fonction entropy_dct qui calcule l'entropie de la dct de touuus
 	- Généraliser le calcul à tous les blocs de l'image complète
 	- Attention aux bords
  
+ ### A faire avant vendredi 08/01
+Ce qu'il reste à faire avant la soutenance :
+1. Une fonction main() qui prend une vidéo (ou suite d'images), détermine si on les compresse à partir d'avant, d'après (?) ou jpeg standard en extrayant uniquement les coefficient de la compression
+2. Une fonction qui détermine le coût théorique d'une vidéo non compressée et compressée pour faire la diff
+3. Arranger le notebook pour les slides et pour le rendre au prof, se répartir les parties pour l'oral  : ce serait bien qu'on puisse faire une démo de compression etc avec seulement le notebook 
+4. Si jamais on a le temps, la question de l'interpolation des déplacement sub pixelliques
+

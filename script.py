@@ -44,7 +44,7 @@ def calcul_deplacement(search_zone, block, bs, p, debug):
                 print(i,j)
                 print("////")
 
-            cost = npl.norm(block - search_zone[left:right , down:up ])
+            cost = npl.norm(block - search_zone[left:right , down:up ], ord=1)
             CF[i * ncol + j, 0] = y_mid_subblock - bs//2 - p # conversion milieu du bloc opti vers valeur du déplacement depuis le milieu de la zone de recherche
             CF[i * ncol + j, 1] = x_mid_subblock - bs//2 - p 
             CF[i * ncol + j, 2] = cost
@@ -101,6 +101,7 @@ def encode_motion(iref, ipred, bs, p, debug):
     """
     Exhaustive Search sur iref avec un macrobloc issu de ipred
     """
+    
     n, m = np.shape(ipred)[:2]
     ncol = int(m // bs)
     nrow = int(n // bs)
@@ -170,17 +171,17 @@ def POC(im_t, im_tp1, bs, p, debug = False):
     timestamp = d.datetime.now().strftime("%d-%m-%Y(%H:%M:%S)")
     plt.pcolormesh(decoded)
     print('ok')
-    plt.savefig(f'/results/{timestamp}.png')
+    plt.savefig(f'./results/{timestamp}.png')
     print(">>> Norme de l'erreur", npl.norm(ipred-decoded))
     return decoded, ipred
 
 def main():
     p = 7
     bs =16
-    img_t = np.array(Image.open("img/1.jpg"))[:,:,0]
-    img_tp1 = np.roll(np.roll(img_t, 2, axis = 0), 1, axis = 1)  
+    img_t = np.array(Image.open("./img/1.jpg"))[:,:,0]
+#     img_tp1 = np.roll(np.roll(img_t, 2, axis = 0), 1, axis = 1)  
 
-    # img_tp1 = np.array(Image.open("img/2.jpg"))
+    img_tp1 = np.array(Image.open("./img/2.jpg"))[:, :, 0]
     decoded, ipred = POC(img_t, img_tp1, bs, p, False)
 
 main()
